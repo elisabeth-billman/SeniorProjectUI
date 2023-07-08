@@ -1,0 +1,122 @@
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.chat-container {
+  width: 1100px;
+  height: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-log {
+  flex-grow: 1;
+  border: 2px solid #ccc;
+  padding: 10px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.chat-log::before {
+  content: "";
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/images/JesusChrist.png');
+  opacity: 0.1;
+  z-index: -1;
+  background-size: 55% auto;
+  background-position: center top 60px; ;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-attachment: fixed;
+}
+
+
+.user-message {
+  display: flex;
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif;
+}
+
+
+.api-message {
+  display: flex;
+  margin-bottom: 15px;
+  max-width: 700px;
+  font-family: 'Playfair Display', serif;
+}
+
+.user-message .message-content,
+.api-message .message-content {
+  color: #333;
+  display: inline-block;
+  padding: 10px 10px;
+  border-radius: 5px;
+  word-wrap: break-word;
+  font-family: 'Playfair Display', serif;
+}
+
+.user-message .message-content {
+  background-color: #e5f1f7;
+  margin-left: auto;
+}
+
+.api-message .message-content {
+  background-color: #e0eee1;
+  margin-right: auto;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #f6f6f6;
+}
+
+.input-container input {
+  flex-grow: 1;
+  width: 100%;
+  margin-right: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  outline: none;
+  font-family: 'Playfair Display', serif;
+}
+
+.input-container input::placeholder {
+  color: #aaa;
+  font-family: 'Playfair Display', serif;
+}
+
+.input-container input:focus {
+  background-color: #e8e8e8;
+}
+
+.input-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ff6f69;
+  color: #fff;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  width: 80px;
+}
+
+.input-container button:hover {
+  background-color: #f8b4b2;
+}
+
+.input-container button:active {
+  background-color: #fa8d89;
+}

@@ -1,0 +1,85 @@
+/* styles.css */
+
+/* Navbar container */
+.navbar {
+    border-bottom: 1px solid #ccc;
+    height: 90px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    flex-shrink: 0; /* Prevent logo from expanding */
+}
+
+/* Navbar brand/logo */
+.navbar-logo {
+    height: 75px; /* Adjust the height as needed */
+    margin-right: 5px; /* Add some spacing to the right of the logo */
+    margin-left: 5px; /* Add some spacing to the left of the logo */
+}
+
+/* Navbar links */
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+/* Individual Navbar link */
+.navbar .nav-links li {
+    margin-right: 10px;
+}
+
+/* Navbar link styling */
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #666;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* Active link styling */
+.navbar .nav-links a.active {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Combined styles for logo and title alignment */
+.navbar-content {
+    display: flex;
+    align-items: center;
+}
+
+
+.title-container {
+  text-align: center; /* Align the title and quotes in the center */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  margin: 0;
+  color: #333; 
+  font-size: 32px; 
+  margin: 0; 
+}
+
+.navbar-quote1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+
+.navbar-quote2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px;
+  color: #666;
+  margin: 0;
+}
