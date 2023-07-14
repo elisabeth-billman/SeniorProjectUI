@@ -1,33 +1,29 @@
 <header>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Oswald&family=Playfair+Display&display=swap" rel="navbar.component.css">
-<app-navbar></app-navbar>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Oswald&family=Playfair+Display&display=swap">
+  <app-navbar></app-navbar>
+</header>
 
-  <body>
-
-    <div class="chat-container">
-      <div class="chat-log" id="chatLog">
-        <style>
-      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Oswald&family=Playfair+Display&display=swap');
-        </style>
-        <div *ngFor="let message of messages">
-          <div [ngClass]="{'user-message': message.isUser, 'api-message': !message.isUser}">
-            <div class="message-content">
-              {{ message.content }}
-            </div>
+<body>
+  <div class="chat-container">
+    <div class="chat-log" id="chatLog">
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Oswald&family=Playfair+Display&display=swap');
+      </style>
+      <div *ngFor="let message of messages">
+        <div [ngClass]="{'user-message': message.isUser, 'api-message': !message.isUser}">
+          <div class="message-content">
+            {{ message.content }}
           </div>
         </div>
-
       </div>
+    </div>
     <div class="input-container">
       <input type="text" [(ngModel)]="userInput" placeholder="Type your question" class="playful-input" />
       <button (click)="sendMessage()" class="playful-button">Send</button>
     </div>
+  </div>
+</body>
 
-    </div>
-
-  </body>
-</header>
+<app-footer></app-footer>

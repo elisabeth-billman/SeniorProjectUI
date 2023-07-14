@@ -12,15 +12,15 @@ interface Message {
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  userInput: string = '';
-  messages: Message[] = [];
-  title: any;
-  apiResponse: any;
+  userInput: string = ''; // Input field value for user messages
+  messages: Message[] = []; // Array to store chat messages
+  title: any; // Not used in this component
+  apiResponse: any; // Not used in this component
 
   constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
-    this.addGreetingMessage();
+    this.addGreetingMessage(); // Display greeting message when the component initializes
   }
 
   addGreetingMessage(): void {
@@ -28,25 +28,26 @@ export class AppComponent implements OnInit {
       content: "Hello! Welcome to Gospel Insights, I'm here to assist you on your spiritual journey and help answer questions. Ask me anything!",
       isUser: false
     };
-    this.messages.push(greetingMessage);
+    this.messages.push(greetingMessage); // Add greeting message to the chat messages array
   }
 
 
   sendMessage(): void {
-    const message = this.userInput.trim();
-    if (message !== '') {
+    const message = this.userInput.trim(); // Get the user's input message and remove leading/trailing whitespace
+
+    if (message !== '') { // Check if the message is not empty
       const newMessage: Message = { content: message, isUser: true };
-      this.messages.push(newMessage);
-      this.userInput = '';
+      this.messages.push(newMessage); // Add user's message to the chat messages array
+      this.userInput = ''; // Clear the input field
 
       this.apiService.askQuestion(message).subscribe(
         (response: any) => {
-          const answer: string = response.choices[0].message.content;
+          const answer: string = response.choices[0].message.content; // Extract the answer from the response
           const newResponse: Message = { content: answer, isUser: false };
-          this.messages.push(newResponse);
+          this.messages.push(newResponse); // Add the response message to the chat messages array
         },
         (error) => {
-          console.log('Error:', error);
+          console.log('Error:', error); // Log any errors that occur during the API request
         }
       );
     }

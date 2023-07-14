@@ -1,6 +1,4 @@
-/* styles.css */
 
-/* Navbar container */
 .navbar {
     border-bottom: 1px solid #ccc;
     height: 90px;
@@ -13,25 +11,21 @@
     flex-shrink: 0; /* Prevent logo from expanding */
 }
 
-/* Navbar brand/logo */
 .navbar-logo {
-    height: 75px; /* Adjust the height as needed */
-    margin-right: 5px; /* Add some spacing to the right of the logo */
-    margin-left: 5px; /* Add some spacing to the left of the logo */
+    height: 75px; 
+    margin-right: 5px; 
+    margin-left: 5px; 
 }
 
-/* Navbar links */
 .navbar .nav-links {
     list-style: none;
     display: flex;
 }
 
-/* Individual Navbar link */
 .navbar .nav-links li {
     margin-right: 10px;
 }
 
-/* Navbar link styling */
 .navbar .nav-links a {
     text-decoration: none;
     color: #666;
@@ -52,9 +46,8 @@
     align-items: center;
 }
 
-
 .title-container {
-  text-align: center; /* Align the title and quotes in the center */
+  text-align: center; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,7 +68,6 @@
   color: #666;
   margin: 0;
 }
-
 
 .navbar-quote2 {
   font-family: 'Cormorant Garamond', serif;
