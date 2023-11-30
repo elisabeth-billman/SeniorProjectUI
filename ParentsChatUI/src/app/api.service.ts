@@ -20,7 +20,7 @@ interface APIResponse {
   providedIn: 'root'
 })
 export class ApiService {
-  private apiUrl = 'http://localhost:8000/ask'; // GospelInsightsAPI URL with ask endpoint
+  private apiUrl = 'http://localhost:8000/ask'; // API URL with ask endpoint
 
   constructor(private http: HttpClient) { }
 

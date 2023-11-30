@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
 
   addGreetingMessage(): void {
     const greetingMessage: Message = {
-      content: "Hello! Welcome to Gospel Insights, I'm here to assist you on your spiritual journey and help answer questions. Ask me anything!",
+      content: "👋 Welcome to LittleLifeline! Your go-to support for all things parenting. Whether you have a question about a mysterious rash, need tips to tame tantrums, or want guidance on your childs milestones, we're here for you. Ask away! 🌟",
       isUser: false
     };
     this.messages.push(greetingMessage); // Add greeting message to the chat messages array
