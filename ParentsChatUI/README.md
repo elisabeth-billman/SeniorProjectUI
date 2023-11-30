@@ -12,13 +12,13 @@ Little LifeLineChatBot is a dedicated companion on the incredible journey of par
 
 Parents can effortlessly seek advice and answers by typing any question into the text field. Powered by GPT 3.5 and a unique Golang backend, the app swiftly processes inquiries and provides accurate, personalized responses.
 
-![image1](/Users/elisabethknudson/Downloads/Senior Project 2023/ParentsChat/SeniorProjectUI/ParentsChatUI/src/assets/images/November 30, 2023/Image 11-30-23 at 4.13 PM.png)
+![image1](ParentsChatUI/src/assets/images/image1.png)
 
-![image2](/Users/elisabethknudson/Downloads/Senior Project 2023/ParentsChat/SeniorProjectUI/ParentsChatUI/src/assets/images/November 30, 2023/Image 11-30-23 at 4.14 PM.png)
+![image2](ParentsChatUI/src/assets/images/image2.png)
 
-![image3](/Users/elisabethknudson/Downloads/Senior Project 2023/ParentsChat/SeniorProjectUI/ParentsChatUI/src/assets/images/November 30, 2023/Image 11-30-23 at 4.15 PM.png)
+![image3](ParentsChatUI/src/assets/images/image3.png)
 
-![image4](/Users/elisabethknudson/Downloads/Senior Project 2023/ParentsChat/SeniorProjectUI/ParentsChatUI/src/assets/images/November 30, 2023/Image 11-30-23 at 4.18 PM.png)
+![image4](ParentsChatUI/src/assets/images/image4.png)
 
 ## Development server
 
