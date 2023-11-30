@@ -24,7 +24,6 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url('/assets/images/JesusChrist.png');
   opacity: 0.1;
   z-index: -1;
   background-size: 50% auto;
